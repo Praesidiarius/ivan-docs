@@ -35,4 +35,4 @@ Das wars dann auch schon :)
 ### Todos
 
 Hier noch die Links zu den verwendeten Ressourcen:
-[woocommerce-breadcrumbs doc]: <https://docs.woocommerce.com/document/woocommerce_breadcrumb>
+[woocommerce-breadcrumbs doc](https://docs.woocommerce.com/document/woocommerce_breadcrumb)
