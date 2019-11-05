@@ -28,4 +28,4 @@ Das wars dann auch schon :)
 ### Todos
 
 Hier noch die Links zu den verwendeten Ressourcen:
-[stackoverflow frage]: <https://stackoverflow.com/questions/15303031/woocommerce-get-category-for-product-page>
+[stackoverflow frage](https://stackoverflow.com/questions/15303031/woocommerce-get-category-for-product-page)
