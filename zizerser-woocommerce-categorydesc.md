@@ -13,7 +13,7 @@ do_action( 'woocommerce_after_shop_loop_item_title' );
 Den folgenden Code einfügen
 ```php
 /**
-    Product Category Description by Nathanael Kammermann
+  * Product Category Description by Nathanael Kammermann
 **/
 $terms = get_the_terms( $product->ID, 'product_cat' );
 echo '<span style="font-size:12px; color:#333;">';
@@ -22,6 +22,7 @@ foreach ($terms as $term) {
     break;
 }
 echo '</span>';
+```
 
 Das wars dann auch schon :)
 
