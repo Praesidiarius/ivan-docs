@@ -1,27 +1,30 @@
 # Woocommerce Category Description for Products
 
-Im Child-Theme "creattica-premium-child" unter "woocommerce" im Template "content-product.php"
+Im Child-Theme "creattica-premium-child" unter "woocommerce" im Template "archive-product.php"
 folgende Anpassungen machen. Sollte die Datei noch nicht vorhanden sein, wie immer die Vorlage
 kopieren aus [WORDPRESS-VERZEICHNIS]/wp-content/plugins/woocommerce/templates/ ins Verzeichnis "woocommerce"
 im oben erwähnten Child-Theme.
 
-Direkt unter 
+Direkt über 
 ```php
-do_action( 'woocommerce_after_shop_loop_item_title' );
+<?php get_footer( 'shop' ); ?>
 ```
 
 Den folgenden Code einfügen
 ```php
-/**
-  * Product Category Description by Nathanael Kammermann
-**/
-$terms = get_the_terms( $product->ID, 'product_cat' );
-echo '<span style="font-size:12px; color:#333;">';
-foreach ($terms as $term) {
-    echo $term->description;
-    break;
-}
-echo '</span>';
+<hr/>
+<span style="font-size:14px; margin-left:34px;">
+    <?php
+    $terms = get_the_terms( $product->ID, 'product_cat' );
+    echo '<div style="font-size:14px; color:#333; padding-left: 34px; padding-right:34px;">';
+    foreach ($terms as $term) {
+        echo '<h3>'.$term->name.'</h3>';
+        echo $term->description;
+        break;
+    }
+    echo '</div>';
+    ?>
+</span>
 ```
 
 Das wars dann auch schon :)
