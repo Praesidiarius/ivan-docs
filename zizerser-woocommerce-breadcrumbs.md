@@ -16,8 +16,11 @@ Den folgenden Code einfügen
 /**
   * Woocommerce Breadcrumbs - added by Nathanael Kammermann
  */
+$sWrap = (is_shop()) ? '<nav class="woocommerce-breadcrumb">' : '<nav class="woocommerce-breadcrumb"><a href="/shop">Produkte + Shop</a> - ';
 $args = array(
-  'delimiter' => ' - ',
+    'delimiter' => ' - ',
+    'home' => false,
+    'wrap_before' => $sWrap,
 );
 woocommerce_breadcrumb( $args );
 ```
