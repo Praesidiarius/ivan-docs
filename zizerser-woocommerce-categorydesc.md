@@ -15,14 +15,16 @@ Den folgenden Code einfügen
 <hr/>
 <span style="font-size:14px; margin-left:34px;">
     <?php
-    $terms = get_the_terms( $product->ID, 'product_cat' );
-    echo '<div style="font-size:14px; color:#333; padding-left: 34px; padding-right:34px;">';
-    foreach ($terms as $term) {
-        echo '<h3>'.$term->name.'</h3>';
-        echo $term->description;
-        break;
+    if(!woocommerce_product_subcategories()) {
+        $terms = get_the_terms( $product->ID, 'product_cat' );
+        echo '<div style="font-size:14px; color:#333; padding-left: 34px; padding-right:34px;">';
+        foreach ($terms as $term) {
+            echo '<h3>'.$term->name.'</h3>';
+            echo $term->description;
+            break;
+        }
+        echo '</div>';
     }
-    echo '</div>';
     ?>
 </span>
 ```
