@@ -55,7 +55,9 @@ if($product->is_in_stock()) {
 Das wars dann auch schon :)
 
 ### Todos
-Aktuell keine
+Aktuell keine.
+Hinweis: Man könnte beides wohl auf die selbe Art lösen (per Hook oder per if im template) - so sieht
+man jedoch gleich beide Methoden.
 
 ### Referenzen
 Hier noch die Links zu den verwendeten Ressourcen:
