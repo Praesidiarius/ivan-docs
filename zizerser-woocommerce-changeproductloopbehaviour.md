@@ -62,5 +62,5 @@ man jedoch gleich beide Methoden.
 ### Referenzen
 Hier noch die Links zu den verwendeten Ressourcen:
 [woocommerce-template-hooks](https://docs.woocommerce.com/wc-apidocs/source-function-woocommerce_template_loop_product_link_close.html#1139-1144)
-[stackoverflow-frage-1]([https://stackoverflow.com/questions/32837968/how-to-get-featured-image-of-a-product-in-woocommerce](https://stackoverflow.com/questions/32837968/how-to-get-featured-image-of-a-product-in-woocommerce))
-[stackoverflow-frage-2]([https://stackoverflow.com/questions/42334598/can-i-modify-woocommerce-functions-within-the-wc-template-functions-php-file-o](https://stackoverflow.com/questions/42334598/can-i-modify-woocommerce-functions-within-the-wc-template-functions-php-file-o))
+[stackoverflow-frage-1](https://stackoverflow.com/questions/32837968/how-to-get-featured-image-of-a-product-in-woocommerce)
+[stackoverflow-frage-2](https://stackoverflow.com/questions/42334598/can-i-modify-woocommerce-functions-within-the-wc-template-functions-php-file-o)
